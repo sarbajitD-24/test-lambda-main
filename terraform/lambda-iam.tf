@@ -1,18 +1,18 @@
 provider "aws" {
-  region = "us-east-1"
+  region = "ap-south-1"
 }
 
 ### Backend ###
 # S3
 ###############
 
-terraform {
-  backend "s3" {
-    bucket = ""
-    key = ""
-    region = ""
-  }
-}
+#terraform {
+ # backend "s3" {
+ #   bucket = ""
+  #  key = ""
+  #  region = ""
+ # }
+#}
 
 ####
 resource "aws_iam_role_policy" "lambda-policy" {
